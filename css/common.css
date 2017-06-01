@@ -5,3 +5,51 @@
  .text-uppercase {
   text-transform: uppercase;
 }
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row:before, .row:after{
+	content: "";
+	display: table;
+}
+
+.row:after{
+	clear: both;
+}
+
+/*todo lo que comience con col- va a tener los valores establecidos*/
+[class*="col-"]{
+	min-height: 7px;
+	padding: 12px;
+	float: left;
+}
+
+.col-4{
+	/* (4/12)*100 */
+	width: 33.333333%;
+}
+
+.col-6{
+	/* (6/12)*100 */
+	width: 50%;
+}
+
+.col-12{
+	/* (12/12)*100 */
+	width: 100%;
+}
+
+.img-responsive{
+	max-width: 100%;
+	width: 100%;
+}
