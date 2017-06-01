@@ -29,6 +29,7 @@ body {
   background: #2C3E50;
   width: 100%;
   top: 0;
+  z-index: 1000;
 }
 
 .menu{
@@ -46,6 +47,11 @@ body {
 a {
   color: white;
   text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #18BC9C;
 }
 
 .logo{
@@ -66,16 +72,122 @@ a {
 	margin: 0 auto;
 }
 
+.monito{
+	margin: 0 auto;
+	display: block;
+}
+
 #home img{
 	margin: 0 auto;
 }
 
 #home h2{
-	font-size: 4.75em;
+	font-size: 4em;
 	text-align: center;
 }
 
 #home p{
-	font-size: 1.75em;
+	font-size: 1.5em;
 	text-align: center;
+}
+
+/*----------------Estrella------------------*/
+.estrella-blanca{
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  height: 25px;
+}
+
+.estrella-azul{
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 0 auto;
+  height: 25px;
+}
+
+.estrella-blanca:after,
+.estrella-azul:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -0.8em;
+  font-size: 2em;
+  padding: 0 0.25em;
+}
+.estrella-blanca{
+  border-color: white;
+}
+.estrella-blanca:after {
+  background-color: #18BC9C;
+  color: white;
+}
+
+/*---------------Portfolio------------------*/
+#portfolio{
+	padding: 70px 0;
+}
+
+.text-services{
+  font-size: 2.75em;
+  text-align: center;
+}
+
+.imagenes:hover{
+	background-color: rgba(24,188,156,0.5);
+	z-index: 1000;
+}
+
+/*-------------Modal-----------------------*/
+
+.box-services-modal{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+}
+
+.modal-body{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.box-services-modal .close img{
+  width: 60px;
+}
+
+.hide{
+  display: none;
+}
+
+.box-services, .imagenes{
+  cursor: pointer;
+}
+
+/*----------------------About----------------------*/
+#about{
+	background-color: #18BC9C;
+	color: white;
+	padding-top: 170px;
+	padding-bottom: 100px;
+	margin: 0 auto;
 }
