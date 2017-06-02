@@ -44,13 +44,13 @@ body {
   float: right;
 }
 
-a {
+.link {
   color: white;
   text-decoration: none;
 }
 
-.menu a:hover,
-.menu a:focus {
+.menu .link:hover,
+.menu .link:focus {
   color: #fff;
   background-color: #18BC9C;
 }
@@ -196,7 +196,7 @@ a {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  padding: 190px 50px;
+  padding: 190px 50px 50px 50px;
 }
 
 .titulo{
@@ -236,8 +236,11 @@ a {
 
 .contenido{
 	color: black;
+	font-size: 1em;
 	margin: 0 auto;
 	position: relative;
+	width: 55%;
+	padding-bottom: 70px;
 }
 
 .close{
@@ -279,6 +282,11 @@ a {
 	border-radius: 5px;
 	padding: 20px 30px;
 	margin: 0 auto;
+}
+
+.download:hover{
+	color:#18BC9C;
+	background-color: white;
 }
 
 .centrar{
@@ -336,9 +344,14 @@ a {
 	float: left;
 	background-color:#18BC9C;
 	text-decoration: none;
+	color: white;
 	border: 2px solid #fff;
 	border-radius: 8px;
 	padding: 10px 20px; 
+}
+
+.btn-send:hover{
+background-color: #13967c;
 }
 
 /*-------------------location----------------------*/
@@ -360,6 +373,11 @@ a {
 	width: 50px;
 	padding-top: 15px;
 	margin: 0 auto;
+}
+
+.social-icon:hover{
+	background-color: white;
+	color: #18BC9C;
 }
 
 .footer-flaco {
