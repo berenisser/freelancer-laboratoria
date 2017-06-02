@@ -125,7 +125,7 @@ a {
 
 .estrella-azul:after{
 	background-color: #fff;
-	color:#2C3E50 ;
+	color:#2C3E50;
 }
 
 .estrella-blanca:after {
@@ -188,6 +188,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
+  overflow: scroll;
   z-index: 3000;
 }
 
@@ -195,7 +196,48 @@ a {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  padding: 100px;
+  padding: 190px 50px;
+}
+
+.titulo{
+  font-size: 2.75em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  position: absolute;
+  top: 50px;
+  left: 37%;
+}
+
+.estrellita{
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  text-align: center;
+  max-width: 250px;
+  margin: 5px auto;
+  height: 25px;
+  border-color: #2C3E50;
+  position: relative;
+
+}
+
+.estrellita:after {
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -1.3em;
+  font-size: 0.7em;
+  padding: 0 0.25em;
+  background-color: #fff;
+  color:#2C3E50;
+}
+
+.contenido{
+	color: black;
+	margin: 0 auto;
+	position: relative;
 }
 
 .close{
@@ -288,6 +330,15 @@ a {
 	width: 100%;
 	padding: 20px 10px;
 	outline: 0;
+}
+
+.btn-send{
+	float: left;
+	background-color:#18BC9C;
+	text-decoration: none;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	padding: 10px 20px; 
 }
 
 /*-------------------location----------------------*/
